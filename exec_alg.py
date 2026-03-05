@@ -94,11 +94,8 @@ plt.tight_layout()
 plt.show()
 
 
-print("=" * 65)
-print("ALMGREN-CHRISS EXECUTION COMPARISON")
-print("=" * 65)
+print("ALMGREN-CHRISS")
 print(f"{'Lambda':<8} {'Kappa':<8} {'E[Cost]':<12} {'Std Dev':<12} {'First Slice':<12}")
 print("-" * 65)
 for r in results:
   print(f"{r['lambda']:<8.1f} {r['kappa']:<8.3f} {r['expected_cost']:<12.2f} {r['std_dev']:<12.2f} {r['schedule'][0]:<12.1f}")
-print("=" * 65)
